@@ -15,7 +15,7 @@ const size_t MAX_GETS_LENGTH = 1023;
 /// Возвращает нулевой указатель, если не удалось прочитать ни одного символа.
 char* gets()
 {
-  char buffer[MAX_GETS_LENGTH + 1];
+  char buffer[MAX_GETS_LENGTH + 2];
   if (!fgets(buffer, MAX_GETS_LENGTH + 1, stdin))
     return nullptr;
 
